@@ -1,8 +1,7 @@
--- TODO: Create schema 
-
-INSERT INTO users (username, password) 
-VALUES 
-    ("KyleW", "Test123"),
-    ("MisterNixon", "hithere34"),
-    ("LexieTuTu", "nixdes"),
-    ("Papa", "lovesfam");
+USE burgers_db;
+INSERT INTO burgers
+    (burger_name, devoured)
+VALUES
+    ("Cheeseburger", false),
+    ("Baconburger", false),
+    ("Double cheese burger", false);

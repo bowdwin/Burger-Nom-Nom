@@ -15,3 +15,4 @@ if (process.env.JAWSDB_URL) {
 connection.connect();
 
 module.exports = connection;
+// mysql://s882691frmpy99dp:taamwptin2c7ce56@nnmeqdrilkem9ked.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tze7unwzp8w83enj
