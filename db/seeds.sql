@@ -1,3 +1,5 @@
+-- TODO: Create schema 
+
 INSERT INTO users (username, password) 
 VALUES 
     ("KyleW", "Test123"),
