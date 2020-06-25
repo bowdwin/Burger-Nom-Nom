@@ -47,29 +47,29 @@ Instructions
 
 App Setup
 
-Create a GitHub repo called burger and clone it to your computer.
+<!-- Create a GitHub repo called burger and clone it to your computer. -->
 
-Make a package.json file by running npm init from the command line.
+<!-- Make a package.json file by running npm init from the command line. -->
 
-Install the Express npm package: npm install express.
+<!-- Install the Express npm package: npm install express. -->
 
-Create a server.js file.
+<!-- Create a server.js file. -->
 
-Install the Handlebars npm package: npm install express-handlebars.
+<!-- Install the Handlebars npm package: npm install express-handlebars. -->
 
-Install MySQL npm package: npm install mysql.
+<!-- Install MySQL npm package: npm install mysql. -->
 
 Require the following npm packages inside of the server.js file:
 
-express
+<!-- express -->
 
-DB Setup
+<!-- DB Setup -->
 
-Inside your burger directory, create a folder named db.
+<!-- Inside your burger directory, create a folder named db. -->
 
 In the db folder, create a file named schema.sql. Write SQL queries this file that do the following:
 
-Create the burgers_db.
+<!-- Create the burgers_db.
 Switch to or use the burgers_db.
 Create a burgers table with these fields:
 
@@ -77,9 +77,9 @@ id: an auto incrementing int that serves as the primary key.
 
 burger_name: a string.
 
-devoured: a boolean.
+devoured: a boolean. -->
 
-Still in the db folder, create a seeds.sql file. In this file, write insert queries to populate the burgers table with at least three entries.
+<!-- Still in the db folder, create a seeds.sql file. In this file, write insert queries to populate the burgers table with at least three entries.
 
 Run the schema.sql and seeds.sql files into the mysql server from the command line
 
@@ -93,11 +93,11 @@ With the mysql> command line tool running, enter the command source schema.sql. 
 
 Now insert the entries you defined in seeds.sql by running the file: source seeds.sql.
 
-Close out of the MySQL command line tool: exit.
+Close out of the MySQL command line tool: exit. -->
 
 Config Setup
 
-Inside your burger directory, create a folder named config.
+<!-- Inside your burger directory, create a folder named config. -->
 
 Create a connection.js file inside config directory.
 
