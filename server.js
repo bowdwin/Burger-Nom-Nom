@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
 const app = express();
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// var routes = require("./controllers/burgers_controller");
+// const routes = require("./controllers/burgers_controller");
 // app.use(routes);
 
 app.listen(PORT, () => {
