@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.static("public"));
 
 //Sets up express to handle data parsing
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // handlebars middleware
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
