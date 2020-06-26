@@ -111,9 +111,9 @@ Config Setup
 
 In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-selectAll()
+<!-- selectAll()
 insertOne()
-updateOne()
+updateOne() -->
 
 <!-- Export the ORM object in module.exports. -->
 
@@ -123,9 +123,9 @@ Model setup
 
 <!-- In models, make a burger.js file. -->
 
-Inside burger.js, import orm.js into burger.js TODO:
-
-Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
+<!-- Inside burger.js, import orm.js into burger.js: -->
+<!--
+Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM. -->
 
 <!-- Export at the end of the burger.js file. -->
 
@@ -156,7 +156,7 @@ Setup the main.handlebars file so it's able to be used by Handlebars. TODO:
 
 Setup the index.handlebars to have the template that Handlebars can render onto. TODO:
 
-Create a button in index.handlebars that will submit the user input into the database.
+Create a button in index.handlebars that will submit the user input into the database. TODO
 
 Directory structure
 All the recommended files and directories from the steps above should look like the following structure:
