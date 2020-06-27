@@ -153,10 +153,10 @@ View setup
 <!-- Create the main.handlebars file inside layouts directory. -->
 <!--
 Setup the main.handlebars file so it's able to be used by Handlebars. TODO: -->
-<!-- 
+<!--
 Setup the index.handlebars to have the template that Handlebars can render onto. TODO: -->
 
-Create a button in index.handlebars that will submit the user input into the database. TODO
+<!-- Create a button in index.handlebars that will submit the user input into the database.  -->
 
 Directory structure
 All the recommended files and directories from the steps above should look like the following structure:
