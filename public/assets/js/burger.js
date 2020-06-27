@@ -2,7 +2,7 @@ $(() => {
   $(".create-form").on("submit", (event) => {
     event.preventDefault();
 
-    const newBurger = {
+    let newBurger = {
       burger_name: $("#newburger").val().trim(),
       devoured: 0,
     };
@@ -16,11 +16,11 @@ $(() => {
     });
   });
 
-  $(".eatburger").on("click", (event) => {
+  $(".eatburger").on("click", function (event) {
     event.preventDefault();
 
-    const id = $(this).data("id");
-    const devouredState = {
+    let id = $(this).data("id");
+    let devouredState = {
       devoured: 1,
     };
 
@@ -33,10 +33,10 @@ $(() => {
     });
   });
 
-  $(".trashburger").on("click", (event) => {
+  $(".trashburger").on("click", function (event) {
     event.preventDefault();
 
-    const id = $(this).data("id");
+    let id = $(this).data("id");
 
     // Send the DELETE request.
     $.ajax({
