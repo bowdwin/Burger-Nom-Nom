@@ -4,7 +4,6 @@ let connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  // TODO: Finish updating this
   connection = mysql.createConnection({
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
