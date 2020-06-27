@@ -26,7 +26,15 @@
                 <div class="panel-body">
 
                     <ul>
+                        {{#each burgers}}
+                        {{#unless devoured}}
 
+                        <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
+                        <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}"><span class="fas fa-teeth-open"></span></button>
+                        <hr>
+                        {{/unless}}
+                        {{/each}}
                     </ul>
 
                 </div>
@@ -39,6 +47,14 @@
                 </div>
                 <div class="panel-body">
                     <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
+                        <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                        <hr>
+                        {{/if}}
+                        {{/each}}
                     </ul>
 
                 </div>

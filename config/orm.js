@@ -1,17 +1,17 @@
-var connection = require("../config/connection");
+const connection = require("../config/connection");
 
 const createQmarks = (num) => {
-  var arr = [];
-  for (var i = 0; i < num; i++) {
+  const arr = [];
+  for (const i = 0; i < num; i++) {
     arr.push("?");
   }
   return arr.toString();
 };
 
 const translateSql = (ob) => {
-  var arr = [];
-  for (var key in ob) {
-    var value = ob[key];
+  const arr = [];
+  for (const key in ob) {
+    const value = ob[key];
     if (Object.hasOwnProperty.call(ob, key)) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
@@ -24,7 +24,7 @@ const translateSql = (ob) => {
 
 const orm = {
   all: (table, cb) => {
-    var dbQuery = "SELECT * FROM " + table + ";";
+    const dbQuery = `SELECT * FROM ${table};`;
 
     connection.query(dbQuery, (err, res) => {
       if (err) {
@@ -34,7 +34,7 @@ const orm = {
     });
   },
   create: (table, cols, vals, cb) => {
-    var dbQuery =
+    const dbQuery =
       "INSERT INTO " +
       table +
       " (" +
@@ -71,7 +71,7 @@ const orm = {
     });
   },
   delete: (table, condition, cb) => {
-    var dbQuery = "DELETE FROM " + table + " WHERE " + condition;
+    const dbQuery = "DELETE FROM " + table + " WHERE " + condition;
     console.log(dbQuery);
 
     connection.query(dbQuery, (err, res) => {
