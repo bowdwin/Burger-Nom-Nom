@@ -131,7 +131,7 @@ Also inside burger.js, create the code that will call the ORM functions using bu
 
 Controller setup
 
-Inside your burger directory, create a folder named controllers.
+<!-- Inside your burger directory, create a folder named controllers. -->
 
 <!-- In controllers, create the burgers_controller.js file. -->
 
@@ -151,8 +151,8 @@ View setup
 <!-- Create the layouts directory inside views directory. -->
 
 <!-- Create the main.handlebars file inside layouts directory. -->
-
-Setup the main.handlebars file so it's able to be used by Handlebars. TODO:
+<!--
+Setup the main.handlebars file so it's able to be used by Handlebars. TODO: -->
 
 Setup the index.handlebars to have the template that Handlebars can render onto. TODO:
 

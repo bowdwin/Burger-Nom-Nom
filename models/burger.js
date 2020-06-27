@@ -1,5 +1,3 @@
-// TODO: crea(te model
-
 const orm = require("../config/orm");
 
 const burger = {
