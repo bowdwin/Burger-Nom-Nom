@@ -14,9 +14,9 @@ let translateSql = (ob) => {
     let value = ob[key];
     if (Object.hasOwnProperty.call(ob, key)) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
-        value = "'" + value + "'";
+        value = `'${value}'`;
       }
-      arr.push(key + "=" + value);
+      arr.push(`${key}=${value}`);
     }
   }
   return arr.toString();
