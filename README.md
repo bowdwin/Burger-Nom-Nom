@@ -4,6 +4,10 @@
 
     https://afternoon-gorge-85011.herokuapp.com/
 
+# Current bugs/issues
+
+- Someones when deleting on heroku the response times out and crashes, not sure why, works completely fine locally
+
 ## About / Synopsis
 
 - This is the 13th home work assignment.
@@ -31,4 +35,4 @@
 
 ## GIF shot running Burger Nom Nom
 
-![](./assets/)
+![](./public/assets/images/EatDaGif.gif)
